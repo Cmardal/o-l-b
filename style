@@ -1,0 +1,121 @@
+body, html {
+  background-color: #eee;
+  height: 100%;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#numberWrong {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 220px;
+  height: 1.7em;
+  padding-top: .3em;
+  background-color: #CCC;
+  font-family: Arial, Helvettica, sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
+  border: 2px solid black;
+  border-radius: 5px;
+
+}
+
+#wrong {
+  display: inline-block;
+  border: 2px solid white;
+  height: 1.2em;
+  width: 2em;
+  border-radius: 5px;
+  background-color: orange;
+  color: white;
+}
+
+
+#bigPicture {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#smallPicture {
+  position: absolute;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+#guessContainer {
+  position: absolute;
+  width: 100%;
+  top: 280px;
+  margin-right: auto;
+  margin-left: auto; 
+  text-align: center;
+  visibility: hidden;
+}
+
+.guessBox {
+  position: relative;
+  display: inline;
+  width: 250px;
+  margin: 20px 50px 20px 50px;
+  padding: 15px;
+  border: 5px solid #ccc;
+  font-family: Arial, Helvettica, sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: .04em;
+  color: #eee;
+  background-color: orange;
+  cursor: pointer;
+}
+
+.bottom {
+  top: 50px;
+}
+
+.screen {
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  font-size: 100pt;
+  color: white;
+}
+
+#correctScreen {
+  background-color: green;
+}
+
+#wrongAnswerScreen {
+  background-color: red;
+}
+
+#finishedScreen {
+  background-color: green;
+}
+
+#finishedAnimation {
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
+}
+
+.screenText {
+  margin-top: 7%;
+}
+
+#preload {
+  visibility: hidden;
+}
